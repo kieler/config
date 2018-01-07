@@ -1,25 +1,17 @@
 # OpenKieler Configurations
 
-This repository contains setup and configuration files for working on the OpenKieler project.
+This repository contains setup and configuration files for working on OpenKieler projects. Follow these steps to install an IDE ready for OpenKieler development:
 
-## OpenKieler.setup
+1. Go to [this site](https://www.eclipse.org/downloads/index.php) and download the Eclipse Installer for your platform, unless you already have it.
 
-Setup file to be used with Oomph, see below.
+1. Start the installer. Click the Hamburger button at the top right corner and select Advanced Mode. Why? Because we're computer scientists, that's why!
 
-### Setting Up Your Development Environment
-You will first need an Eclipse installation to hack away on OpenKieler with. Since we have a shiny Oomph setup available, this turns out to be comparatively painless (note that our setup assumes that you have a GitHub account):
+1. On the _Product_ page, select _Eclipse Modeling Tools_ as the base on which to install everything required for OpenKieler development. Click _Next_.
 
-1. Go to [this site](https://www.eclipse.org/downloads/index.php) and download the Eclipse Installer for your platform. You will find the links at the bottom of the "Try the Eclipse Installer" box.
+1. Unless you already have the _OpenKieler_ project in the projects list, click the green plus button at the top right corner. Choose the _Github Projects_ catalog and use the following as the resource URI: `https://raw.githubusercontent.com/OpenKieler/config/master/OpenKieler.setup` Hit _OK_.
 
-2. Start the installer. Click the Hamburger button at the top right corner and select Advanced Mode. Why? Because we're computer scientists, that's why!
+1. Make sure that the _OpenKieler_ project is selected and hit _Next_.
 
-3. Next, we need to tell Oomph to get everything ready for OpenKieler development. Download our [Oomph setup file](https://raw.githubusercontent.com/OpenKieler/config/master/OpenKieler.setup), click the Plus button at the top right corner and add the setup file to the Github Projects catalog. Double-click the new OpenKieler entry. This will cause an item to appear in the table at the bottom of the window. Once you're done, click Next.
+1. Oomph now asks you to enter some more information. You can usually leave the settings as is, except for the Installation folder name. This will be the directory under which all your Eclipse installations installed with Oomph will appear, each in a separate sub-directory. Select a proper directory and click _Next_.
 
-3. Oomph now asks you to enter some more information. You can usually leave the settings as is, except for the Installation folder name. This will be the directory under which all your Eclipse installations installed with Oomph will appear, each in a separate sub-directory. Select a proper directory and click Next.
-
-5. If Oomph fails to clone our GitHub repository, this is probably due to Eclipse not finding your SSH key for GitHub. Fix it by going to the Eclipse preferences. You can manage your keys under General > Network Connections > SSH2. Once you have setup your SSH keys, let Oomph try again by selecting Perform Setup Tasks from the Help menu.
-
-## de.cau.cs.kieler.openkieler.targetplatform
-
-Target platform definition used by [DebukViz](https://github.com/OpenKieler/debukviz), [EcoreViz](https://github.com/OpenKieler/ecoreviz) and [KlassViz](https://github.com/OpenKieler/klassviz).
-The contained definition file `de.cau.cs.kieler.openkieler.targetplatform.target` should be copied to the corresponding `build` directory of the three mentioned project if updated.
+1. If Oomph fails to clone our GitHub repository, this is probably due to Eclipse not finding your SSH key for GitHub. Fix it by going to the Eclipse preferences. You can manage your keys under General > Network Connections > SSH2. Once you have setup your SSH keys, let Oomph try again by selecting Perform Setup Tasks from the Help menu.
