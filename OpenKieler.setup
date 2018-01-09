@@ -365,7 +365,7 @@
           <repository
               url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
           <repository
-              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/"/>
+              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
         </repositoryList>
         <repositoryList
             name="Oxygen">
@@ -378,7 +378,7 @@
           <repository
               url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
           <repository
-              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/"/>
+              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
         </repositoryList>
       </targlet>
     </setupTask>
