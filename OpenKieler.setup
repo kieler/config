@@ -84,18 +84,6 @@
     </setupTask>
   </setupTask>
   <setupTask
-      xsi:type="setup:CompoundTask"
-      name="Variables">
-    <setupTask
-        xsi:type="setup:VariableTask"
-        id="config.openKielerGitUrl"
-        name="config.openKielerGitUrl"
-        defaultValue="ssh://git@github.com/OpenKieler/"
-        label="OpenKieler GitHub URL">
-      <description></description>
-    </setupTask>
-  </setupTask>
-  <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
         name="org.eclipse.emf.sdk.feature.group"/>
