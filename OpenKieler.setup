@@ -281,7 +281,7 @@
           name="${scope.project.label}"
           activeRepositoryList="${eclipse.target.platform}">
         <annotation
-            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator">
+            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator_DISABLED">
           <detail
               key="preferredRepositories">
             <value>http://download.eclipse.org/eclipse/updates/</value>
