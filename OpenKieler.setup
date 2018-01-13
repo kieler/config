@@ -186,6 +186,27 @@
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
+        id="git.clone.openkieler.kiesl"
+        remoteURI="OpenKieler/kiesl">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/InducedChoices">
+        <detail
+            key="inherit">
+          <value>github.remoteURIs</value>
+        </detail>
+        <detail
+            key="label">
+          <value>${scope.project.label} KlassViz Repository</value>
+        </detail>
+        <detail
+            key="target">
+          <value>remoteURI</value>
+        </detail>
+      </annotation>
+      <description>${scope.project.label} KieSL Repository</description>
+    </setupTask>
+    <setupTask
+        xsi:type="git:GitCloneTask"
         id="git.clone.openkieler.klassviz"
         remoteURI="OpenKieler/klassviz">
       <annotation
@@ -224,6 +245,9 @@
         rootFolder="${git.clone.openkieler.ecoreviz.location}"
         locateNestedProjects="true"/>
     <sourceLocator
+        rootFolder="${git.clone.openkieler.kiesl.location}"
+        locateNestedProjects="true"/>
+    <sourceLocator
         rootFolder="${git.clone.openkieler.klassviz.location}"
         locateNestedProjects="true"/>
   </setupTask>
@@ -240,6 +264,12 @@
       <predicate
           xsi:type="predicates:LocationPredicate"
           pattern="${git.clone.openkieler.ecoreviz.location|trimTrailingSlashes}/.*"/>
+    </workingSet>
+    <workingSet
+        name="OpenKieler KieSL">
+      <predicate
+          xsi:type="predicates:LocationPredicate"
+          pattern="${git.clone.openkieler.kiesl.location|trimTrailingSlashes}/.*"/>
     </workingSet>
     <workingSet
         name="OpenKieler KlassViz">
