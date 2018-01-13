@@ -256,32 +256,32 @@
     <workingSet
         name="OpenKieler DebuKViz">
       <predicate
-          xsi:type="predicates:LocationPredicate"
-          pattern="${git.clone.openkieler.debukviz.location|trimTrailingSlashes}/.*"/>
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.debukviz"/>
     </workingSet>
     <workingSet
         name="OpenKieler EcoreViz">
       <predicate
-          xsi:type="predicates:LocationPredicate"
-          pattern="${git.clone.openkieler.ecoreviz.location|trimTrailingSlashes}/.*"/>
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.ecoreviz"/>
     </workingSet>
     <workingSet
         name="OpenKieler KieSL">
       <predicate
-          xsi:type="predicates:LocationPredicate"
-          pattern="${git.clone.openkieler.kiesl.location|trimTrailingSlashes}/.*"/>
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.kiesl.text"/>
     </workingSet>
     <workingSet
         name="OpenKieler KlassViz">
       <predicate
-          xsi:type="predicates:LocationPredicate"
-          pattern="${git.clone.openkieler.klassviz.location|trimTrailingSlashes}/.*"/>
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.klassviz"/>
     </workingSet>
     <workingSet
         name="OpenKieler Stuff">
       <predicate
-          xsi:type="predicates:LocationPredicate"
-          pattern="${git.clone.openkieler.config.location|trimTrailingSlashes}/.*"/>
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.openkieler.config"/>
     </workingSet>
   </setupTask>
   <stream name="master"
