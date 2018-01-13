@@ -196,7 +196,7 @@
         </detail>
         <detail
             key="label">
-          <value>${scope.project.label} KlassViz Repository</value>
+          <value>${scope.project.label} KieSL Repository</value>
         </detail>
         <detail
             key="target">
