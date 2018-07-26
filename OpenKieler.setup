@@ -40,20 +40,8 @@
         name="org.eclipse.jdt.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.targetPlatform"
-          value="1.8"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.compliance"
-          value="1.8"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.incompleteEnumSwitch"
           value="ignore"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.source"
-          value="1.8"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -113,9 +101,9 @@
     <repository
         url="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
     <repository
-        url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-    <repository
         url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/checkstyle"/>
+    <repository
+        url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -289,7 +277,7 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="eclipse.target.platform"
-        defaultValue="Oxygen"
+        defaultValue="Photon"
         storageURI="scope://Workspace"/>
     <setupTask
         xsi:type="setup.p2:P2Task"/>
@@ -395,6 +383,19 @@
               url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
               url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+          <repository
+              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
+        </repositoryList>
+        <repositoryList
+            name="Photon">
+          <repository
+              url="http://download.eclipse.org/releases/photon"/>
+          <repository
+              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository"/>
+          <repository
+              url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
+          <repository
+              url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
               url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
         </repositoryList>
