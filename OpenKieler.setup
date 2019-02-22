@@ -83,7 +83,7 @@
         name="org.eclipse.jdt.feature.group"/>
     <requirement
         name="org.eclipse.xtext.sdk.feature.group"
-        versionRange="[2.12.0,2.13.0)"/>
+        versionRange="[2.16.0,2.17.0)"/>
     <requirement
         name="org.eclipse.egit.feature.group"/>
     <requirement
@@ -103,7 +103,7 @@
     <repository
         url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/checkstyle"/>
     <repository
-        url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0"/>
+        url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.16.0"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -287,7 +287,7 @@
           name="${scope.project.label}"
           activeRepositoryList="${eclipse.target.platform}">
         <annotation
-            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator_DISABLED">
+            source="http:/www.eclipse.org/oomph/targlets/TargetDefinitionGenerator">
           <detail
               key="preferredRepositories">
             <value>http://download.eclipse.org/eclipse/updates/</value>
@@ -316,7 +316,7 @@
             name="org.eclipse.emf.sdk.feature.group"/>
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"
-            versionRange="[2.12.0,2.13.0)"/>
+            versionRange="[2.16.0,2.17.0)"/>
         <requirement
             name="org.eclipse.equinox.executable.feature.group"/>
         <requirement
@@ -361,39 +361,13 @@
             rootFolder="${git.clone.openkieler.klassviz.location}"
             locateNestedProjects="true"/>
         <repositoryList
-            name="Neon">
-          <repository
-              url="http://download.eclipse.org/releases/neon"/>
-          <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
-          <repository
-              url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
-          <repository
-              url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-          <repository
-              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
-        </repositoryList>
-        <repositoryList
-            name="Oxygen">
-          <repository
-              url="http://download.eclipse.org/releases/oxygen/"/>
-          <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20170818183741/repository/"/>
-          <repository
-              url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
-          <repository
-              url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-          <repository
-              url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
-        </repositoryList>
-        <repositoryList
             name="Photon">
           <repository
               url="http://download.eclipse.org/releases/photon"/>
           <repository
               url="http://download.eclipse.org/tools/orbit/downloads/drops/R20180606145124/repository"/>
           <repository
-              url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
+              url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.16.0/"/>
           <repository
               url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
