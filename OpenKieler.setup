@@ -214,6 +214,27 @@
       </annotation>
       <description>${scope.project.label} KlassViz Repository</description>
     </setupTask>
+    <setupTask
+        xsi:type="git:GitCloneTask"
+        id="git.clone.openkieler.ptbrowser"
+        remoteURI="OpenKieler/ptbrowser">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/InducedChoices">
+        <detail
+            key="inherit">
+          <value>github.remoteURIs</value>
+        </detail>
+        <detail
+            key="label">
+          <value>${scope.project.label} KieSL Repository</value>
+        </detail>
+        <detail
+            key="target">
+          <value>remoteURI</value>
+        </detail>
+      </annotation>
+      <description>${scope.project.label} Ptolemy Browser Repository</description>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="jdt:JRETask"
@@ -237,6 +258,9 @@
         locateNestedProjects="true"/>
     <sourceLocator
         rootFolder="${git.clone.openkieler.klassviz.location}"
+        locateNestedProjects="true"/>
+    <sourceLocator
+        rootFolder="${git.clone.openkieler.ptbrowser.location}"
         locateNestedProjects="true"/>
   </setupTask>
   <setupTask
@@ -264,6 +288,12 @@
       <predicate
           xsi:type="predicates:RepositoryPredicate"
           project="de.cau.cs.kieler.klassviz"/>
+    </workingSet>
+    <workingSet
+        name="OpenKieler Ptolemy Browser">
+      <predicate
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.ptolemy.klighd"/>
     </workingSet>
     <workingSet
         name="OpenKieler Stuff">
@@ -350,6 +380,10 @@
         <requirement
             name="org.eclipse.elk.sdk.feature.source.feature.group"/>
         <requirement
+            name="org.ptolemy.feature.feature.group"/>
+        <requirement
+            name="org.ptolemy.feature.source.feature.group"/>
+        <requirement
             name="org.eclipse.jdt.feature.group"/>
         <sourceLocator
             rootFolder="${git.clone.openkieler.debukviz.location}"
@@ -359,6 +393,12 @@
             locateNestedProjects="true"/>
         <sourceLocator
             rootFolder="${git.clone.openkieler.klassviz.location}"
+            locateNestedProjects="true"/>
+        <sourceLocator
+            rootFolder="${git.clone.openkieler.kiesl.location}"
+            locateNestedProjects="true"/>
+        <sourceLocator
+            rootFolder="${git.clone.openkieler.ptbrowser.location}"
             locateNestedProjects="true"/>
         <repositoryList
             name="Photon">
@@ -372,6 +412,8 @@
               url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
               url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
+          <repository
+              url="https://rtsys.informatik.uni-kiel.de/~kieler/updatesite/ptolemy/"/>
         </repositoryList>
       </targlet>
     </setupTask>
