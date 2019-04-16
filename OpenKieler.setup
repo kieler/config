@@ -293,7 +293,7 @@
         name="OpenKieler Ptolemy Browser">
       <predicate
           xsi:type="predicates:RepositoryPredicate"
-          project="de.cau.cs.kieler.ptolemy.klighd"/>
+          project="de.cau.cs.kieler.ptbrowser.klighd"/>
     </workingSet>
     <workingSet
         name="OpenKieler Stuff">
