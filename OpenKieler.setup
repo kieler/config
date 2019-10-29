@@ -80,6 +80,8 @@
     <requirement
         name="org.eclipse.emf.mwe2.runtime.sdk.feature.group"/>
     <requirement
+        name="org.eclipse.emf.ecore.xcore.lib.feature.group"/>
+    <requirement
         name="org.eclipse.jdt.feature.group"/>
     <requirement
         name="org.eclipse.xtext.sdk.feature.group"
@@ -216,6 +218,27 @@
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
+        id="git.clone.openkieler.osgiviz"
+        remoteURI="OpenKieler/osgiviz">
+      <annotation
+          source="http://www.eclipse.org/oomph/setup/InducedChoices">
+        <detail
+            key="inherit">
+          <value>github.remoteURIs</value>
+        </detail>
+        <detail
+            key="label">
+          <value>${scope.project.label} OSGiViz Repository</value>
+        </detail>
+        <detail
+            key="target">
+          <value>remoteURI</value>
+        </detail>
+      </annotation>
+      <description>${scope.project.label} OSGiViz Repository</description>
+    </setupTask>
+    <setupTask
+        xsi:type="git:GitCloneTask"
         id="git.clone.openkieler.ptbrowser"
         remoteURI="OpenKieler/ptbrowser">
       <annotation
@@ -260,6 +283,9 @@
         rootFolder="${git.clone.openkieler.klassviz.location}"
         locateNestedProjects="true"/>
     <sourceLocator
+        rootFolder="${git.clone.openkieler.osgiviz.location}"
+        locateNestedProjects="true"/>
+    <sourceLocator
         rootFolder="${git.clone.openkieler.ptbrowser.location}"
         locateNestedProjects="true"/>
   </setupTask>
@@ -288,6 +314,12 @@
       <predicate
           xsi:type="predicates:RepositoryPredicate"
           project="de.cau.cs.kieler.klassviz"/>
+    </workingSet>
+    <workingSet
+        name="OpenKieler OSGiViz">
+      <predicate
+          xsi:type="predicates:RepositoryPredicate"
+          project="de.cau.cs.kieler.osgiviz"/>
     </workingSet>
     <workingSet
         name="OpenKieler Ptolemy Browser">
@@ -393,6 +425,9 @@
             locateNestedProjects="true"/>
         <sourceLocator
             rootFolder="${git.clone.openkieler.klassviz.location}"
+            locateNestedProjects="true"/>
+        <sourceLocator
+            rootFolder="${git.clone.openkieler.osgiviz.location}"
             locateNestedProjects="true"/>
         <sourceLocator
             rootFolder="${git.clone.openkieler.kiesl.location}"
