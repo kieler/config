@@ -449,6 +449,8 @@
               url="http://rtsys.informatik.uni-kiel.de/%7Ekieler/updatesite/nightly/pragmatics/"/>
           <repository
               url="https://rtsys.informatik.uni-kiel.de/~kieler/updatesite/ptolemy/"/>
+          <repository
+              url="http://services.typefox.io/open-source/jenkins/job/KLighD/job/releases-2020-02-1.0.0/lastSuccessfulBuild/artifact/updatesite/"/>
         </repositoryList>
       </targlet>
     </setupTask>
