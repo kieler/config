@@ -111,8 +111,8 @@
       name="Git Repositories">
     <setupTask
         xsi:type="git:GitCloneTask"
-        id="git.clone.openkieler.config"
-        remoteURI="OpenKieler/config">
+        id="git.clone.kieler.config"
+        remoteURI="Kieler/config">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
@@ -132,8 +132,8 @@
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
-        id="git.clone.openkieler.osgiviz"
-        remoteURI="OpenKieler/osgiviz">
+        id="git.clone.kieler.osgiviz"
+        remoteURI="Kieler/osgiviz">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
@@ -161,25 +161,25 @@
   <setupTask
       xsi:type="projects:ProjectsImportTask">
     <sourceLocator
-        rootFolder="${git.clone.openkieler.config.location}"
+        rootFolder="${git.clone.kieler.config.location}"
         locateNestedProjects="true"/>
     <sourceLocator
-        rootFolder="${git.clone.openkieler.osgiviz.location}"
+        rootFolder="${git.clone.kieler.osgiviz.location}"
         locateNestedProjects="true"/>
   </setupTask>
   <setupTask
       xsi:type="setup.workingsets:WorkingSetTask">
     <workingSet
-        name="OpenKieler OSGiViz">
+        name="Kieler OSGiViz">
       <predicate
           xsi:type="predicates:RepositoryPredicate"
           project="de.cau.cs.kieler.osgiviz"/>
     </workingSet>
     <workingSet
-        name="OpenKieler Stuff">
+        name="Kieler Stuff">
       <predicate
           xsi:type="predicates:RepositoryPredicate"
-          project="de.cau.cs.kieler.openkieler.config"/>
+          project="de.cau.cs.kieler.kieler.config"/>
     </workingSet>
   </setupTask>
   <stream name="master"
@@ -212,7 +212,7 @@
           </detail>
           <detail
               key="location">
-            <value>${git.clone.openkieler.config.location|trimTrailingSlashes}/build/de.cau.cs.kieler.openkieler.osgiviz.targetplatform/de.cau.cs.kieler.openkieler.osgiviz.targetplatform.target</value>
+            <value>${git.clone.kieler.config.location|trimTrailingSlashes}/build/de.cau.cs.kieler.kieler.osgiviz.targetplatform/de.cau.cs.kieler.kieler.osgiviz.targetplatform.target</value>
           </detail>
         </annotation>
         <requirement
@@ -262,7 +262,7 @@
         <requirement
             name="org.slf4j.api"/>
         <sourceLocator
-            rootFolder="${git.clone.openkieler.osgiviz.location}"
+            rootFolder="${git.clone.kieler.osgiviz.location}"
             locateNestedProjects="true"/>
         <repositoryList
             name="FixedTarget">
@@ -275,7 +275,7 @@
           <repository
               url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
-              url="http://services.typefox.io/open-source/jenkins/job/KLighD/job/master/lastSuccessfulBuild/artifact/updatesite"/>
+              url="https://kieler.github.io/KLighD/v1.1.0/"/>
         </repositoryList>
       </targlet>
     </setupTask>
