@@ -83,7 +83,7 @@
         name="org.eclipse.jdt.feature.group"/>
     <requirement
         name="org.eclipse.xtext.sdk.feature.group"
-        versionRange="[2.20.0,2.21.0)"/>
+        versionRange="[2.21.0,2.22.0)"/>
     <requirement
         name="org.eclipse.egit.feature.group"/>
     <requirement
@@ -101,7 +101,7 @@
     <repository
         url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/checkstyle"/>
     <repository
-        url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+        url="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.21.0/"/>
     <repository
         url="http://download.eclipse.org/technology/m2e/releases"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
@@ -226,7 +226,7 @@
             name="org.eclipse.emf.sdk.feature.group"/>
         <requirement
             name="org.eclipse.xtext.runtime.feature.group"
-            versionRange="[2.20.0,2.21.0)"/>
+            versionRange="[2.21.0,2.22.0)"/>
         <requirement
             name="org.eclipse.equinox.executable.feature.group"/>
         <requirement
@@ -267,11 +267,11 @@
         <repositoryList
             name="FixedTarget">
           <repository
-              url="http://download.eclipse.org/releases/2019-12"/>
+              url="http://download.eclipse.org/releases/2020-03"/>
           <repository
-              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository"/>
+              url="http://download.eclipse.org/tools/orbit/downloads/drops/R20200224183213/repository/"/>
           <repository
-              url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+              url="https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.21.0/"/>
           <repository
               url="http://build.eclipse.org/modeling/elk/updates/nightly"/>
           <repository
