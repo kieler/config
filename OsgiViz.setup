@@ -111,7 +111,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.kieler.config"
-        remoteURI="Kieler/config">
+        remoteURI="kieler/config">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
@@ -132,7 +132,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.kieler.osgiviz"
-        remoteURI="Kieler/osgiviz">
+        remoteURI="kieler/osgiviz">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
