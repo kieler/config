@@ -1,3 +1,6 @@
+## NOTE: READ-ONLY
+This repository is now read-only and all its contents (the setups and target platforms) are now hosted in their respective repositories. Please use those instead.
+
 # OpenKieler Configurations
 
 This repository contains setup and configuration files for working on OpenKieler projects. Follow these steps to install an IDE ready for OpenKieler development:
